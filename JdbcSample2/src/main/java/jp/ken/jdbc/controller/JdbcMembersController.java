@@ -138,7 +138,7 @@ public class JdbcMembersController {
     }
 
     @RequestMapping(value="/edit", method=RequestMethod.POST)
-    public String toEdit(@RequestParam("id") String id,
+    public String toEdit(@RequestParam(value="id") String id,
     		Model model,
             @Validated(GroupOrder.class) @ModelAttribute MembersModel membersModel,
             BindingResult result) {
@@ -163,6 +163,7 @@ public class JdbcMembersController {
         }
 
     	model.addAttribute("membersModel", membersModel);
+    	model.addAttribute("id", id);
     	model.addAttribute("headline", "会員更新完了" );
     	model.addAttribute("message", "会員情報を更新しました");
 
