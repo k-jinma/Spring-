@@ -40,6 +40,7 @@
 		<beans:property name="password" value="d69294d046ff546ca9e79863988083066b431e04342dfb204bf2dbf647001b27" />
 	</beans:bean>
 
+
 	<beans:bean class="org.springframework.jdbc.core.JdbcTemplate">
 		<beans:constructor-arg ref="dataSource" />
 	</beans:bean>
