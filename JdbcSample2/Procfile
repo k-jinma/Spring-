@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target /jdbc-1.0.0-BUILD-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -war target /jdbc-1.0.0-BUILD-SNAPSHOT.war
